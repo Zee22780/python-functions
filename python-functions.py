@@ -23,7 +23,15 @@ def occurrences(one, two):
 
 occurrences('fleep floop', 'e')
 
+#4. Write a function named product that takes an arbitrary number of numbers, multiplies them all together, and returns the product.
 
+def product(*args):
+  result = 1
+  for i in args:
+    result *= i
+  return result
+
+print(product(-1, 4))
 
 
 
